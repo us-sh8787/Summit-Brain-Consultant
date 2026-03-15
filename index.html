@@ -376,7 +376,7 @@ async function sendMessage(){
     const response=await fetch('/api/advisor',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({system:SYSTEM_PROMPT,messages:messages})
+      body:JSON.stringify({messages:messages})
     });
     const data=await response.json();
     thinkEl.remove();
