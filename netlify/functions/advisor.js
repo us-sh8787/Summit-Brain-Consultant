@@ -29,12 +29,11 @@ exports.handler = async function(event, context) {
     const body = JSON.parse(event.body);
 
     const requestBody = {
-      model: 'claude-sonnet-4-5',
+      model: 'claude-sonnet-4-6',
       max_tokens: 2000,
       messages: body.messages
     };
 
-    // Only add system if provided
     if (body.system) {
       requestBody.system = body.system;
     }
