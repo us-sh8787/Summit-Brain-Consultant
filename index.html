@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Summit Clinical Advisor — Provider Access</title>
+<title>Summit Clinical Index — Provider Access</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -178,7 +178,7 @@ textarea#user-input::placeholder{color:var(--text-dim)}
 <div class="screen active" id="screen-password">
   <div class="pw-box">
     <div class="pw-eyebrow">Restricted Access</div>
-    <h1>Summit<br><em>Clinical Advisor</em></h1>
+    <h1>Summit<br><em>Clinical Index</em></h1>
     <p>This tool is for licensed healthcare providers only. Enter your access code to continue.</p>
     <div class="pw-field">
       <input type="password" id="pw-input" placeholder="Enter access code" onkeydown="if(event.key==='Enter')checkPw()">
@@ -212,7 +212,7 @@ textarea#user-input::placeholder{color:var(--text-dim)}
       <input type="checkbox" id="disc-check" onchange="toggleReady()">
       <label for="disc-check"><strong>I am a licensed healthcare provider.</strong> I have read and understood the disclosures above and agree to use this tool for professional clinical reference only.</label>
     </div>
-    <button class="btn-gold" id="btn-enter" onclick="enterAdvisor()">Enter Clinical Advisor</button>
+    <button class="btn-gold" id="btn-enter" onclick="enterAdvisor()">Enter Clinical Index</button>
   </div>
 </div>
 
@@ -267,7 +267,7 @@ textarea#user-input::placeholder{color:var(--text-dim)}
 
     <div class="chat-area">
       <div class="chat-header">
-        <h2>Clinical Advisor</h2>
+        <h2>Clinical Index</h2>
         <p>Describe a patient scenario, ask about a product, or select a prompt.</p>
       </div>
       <div class="chat-messages" id="chat-messages">
@@ -446,9 +446,6 @@ function appendThinking(){
   return div;
 }
 
-// ═══════════════════════════════════════════════════════════════
-// SYSTEM PROMPT
-// ═══════════════════════════════════════════════════════════════
-
+</script>
 </body>
 </html>
